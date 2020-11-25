@@ -87,3 +87,14 @@ play(123, 124); // '2스트라이크'
 - event
   - [이벤트](https://ko.javascript.info/introduction-browser-events)
   - [이벤트 위임](https://ko.javascript.info/event-delegation)
+
+## 기능 목록
+- event handler
+  - numIsSubmited
+  - replayButtonIsClicked
+- BaseballClass
+  - getRandom : 3자리 난수 뽑는 함수를 리턴 생성자에서 사용
+  - judge : getRandom()의 리턴, 사용자의 입력값을 받아 일치 여부 판단하여 스트라이크 개수, 볼 개수, 정답여부 반환
+  - play : judge()의 반환값을 받아 스트라이크, 볼, 낫싱, 정답 관련 String 반환
+  - render : play()의 반환값을 받아 dom 조작하여 렌더
+  - replay : 재시작 버튼 이벤트를 받아 초기화
